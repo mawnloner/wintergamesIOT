@@ -8,8 +8,8 @@ MMA7660 accelemeter;
 const String playerID = "23"; //n1 = team | n2 = playernum
 
 //wifi connectie
-const char* ssid = "sd-lab"; 
-const char* password = "#2Geheim";
+const char* ssid = "ssid"; 
+const char* password = "pswd";
 WiFiClientSecure client;
 
 void setup() {
@@ -82,7 +82,7 @@ int send2server(int stapPuntDef){
     digitalWrite(LED_BUILTIN, HIGH);
     String stapscoreStr = String(stapPuntDef);
     stapscoreStr.replace(" ", "");
-    String link = "https://lasergame.stu.sd-lab.nl/stappen.php?spelspelerid=" + playerID + "&stapscore=" + stapscoreStr + "&authtoken=pantertje";
+    String link = "https://www.domein.nl/stappen.php?spelspelerid=" + playerID + "&stapscore=" + stapscoreStr + "&authtoken=pantertje";
     Serial.println("url " + link);
     Serial.println("stapscore " + stapscoreStr);
     HTTPClient http;
