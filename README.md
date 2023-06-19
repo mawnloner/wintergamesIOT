@@ -1,5 +1,5 @@
 # wintergamesIOT
-het iot gedeelte van de wintergames 2022
+het iot gedeelte van de wintergames 2022 (october 2022)
 
 Dit is een eerdere revisie van de pedometer. Hierbij werdt alleen gelet op minimale acceleratie, om camping tijdens een lasergamesessie te voorkomen.
 
